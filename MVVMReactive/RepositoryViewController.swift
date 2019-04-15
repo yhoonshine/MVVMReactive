@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class RepositoryViewController: UITableViewController {
-
+    
+    let viewModel = RepositoryViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func bindViewModel() {
+        let input = RepositoryViewModel.Input.init(trigger: Observable.just(()))
+        let output = viewModel.transform(input: input)
+        
+//        output.items
+//            .asDriver(onErrorJustReturn: [])
+//            .drive(tableView.rx.items(cellIdentifier: "reuseIdentifier", cellType: RepositoryCell.self)) { tableView, viewModel, cell in
+//                cell.bind(to: viewModel)
+//            }.disposed(by: rx.disposeBag)
     }
-    */
 
 }

@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     let service = Service()
     let disposeBag = DisposeBag()
     
+    let viewModel = RepositoryViewModel()
+
     lazy var lable: UILabel = {
         let lable = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 44)))
         lable.center = view.center
@@ -30,7 +32,12 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-
-
+    
+    func bindViewModel() {
+        let input = RepositoryViewModel.Input.init(trigger: Observable.just(()))
+        let output = viewModel.transform(input: input)
+        output.items
+            .asDriver(onErrorJustReturn: []).drive()
+    }
 }
 
