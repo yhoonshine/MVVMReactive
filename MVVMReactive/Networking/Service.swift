@@ -11,11 +11,13 @@ import RxSwift
 import Moya
 
 protocol ServiceType {
+    
     associatedtype Target: TargetType
     var networking: Networking<Target> { get }
 }
 
 extension ServiceType {
+    
     func request(_ target: Target) -> Single<Any> {
         return networking.request(target).mapJSON()
     }
@@ -34,6 +36,7 @@ extension ServiceType {
 }
 
 struct Service: ServiceType {
+    
     let networking: Networking<GitHubAPI>
     init(networking: Networking<Target> = Networking<GitHubAPI>()) {
         self.networking = networking

@@ -15,6 +15,7 @@ enum GitHubAPI {
 }
 
 extension GitHubAPI: Moya.TargetType {
+    
     var baseURL: URL {
         return URL(string: "https://api.github.com")!
     }

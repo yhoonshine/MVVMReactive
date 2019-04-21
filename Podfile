@@ -9,6 +9,7 @@ target 'MVVMReactive' do
   pod 'RxSwift'
   pod 'Moya/RxSwift'
   pod 'RxCocoa'
+  pod 'Kingfisher'
 
   target 'MVVMReactiveTests' do
     inherit! :search_paths

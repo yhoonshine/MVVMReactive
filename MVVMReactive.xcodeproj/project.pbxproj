@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C18CF4E226C18F9005F3524 /* RepositorysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18CF4D226C18F9005F3524 /* RepositorysViewModel.swift */; };
+		4C18CF5E226C9C4F005F3524 /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18CF5D226C9C4F005F3524 /* Kingfisher+Rx.swift */; };
+		4C18CF62226CAD04005F3524 /* Rx+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18CF61226CAD04005F3524 /* Rx+Extension.swift */; };
+		4C18CF6A226CBD47005F3524 /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18CF69226CBD47005F3524 /* RepositoryDetailsViewModel.swift */; };
 		4C41763822632B0700DDC522 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41763722632B0700DDC522 /* Networking.swift */; };
 		4C41763B22632BBE00DDC522 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41763A22632BBE00DDC522 /* Service.swift */; };
 		4C41763F2263328D00DDC522 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C41763E2263328D00DDC522 /* GitHubAPI.swift */; };
@@ -27,7 +31,6 @@
 		DB050325226436FA0078DFAA /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB050323226436FA0078DFAA /* RepositoryCell.xib */; };
 		DB050327226437700078DFAA /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB050326226437700078DFAA /* RepositoryCellViewModel.swift */; };
 		DB050329226439600078DFAA /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB050328226439600078DFAA /* RepositoryViewController.swift */; };
-		DB05032B2264831D0078DFAA /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05032A2264831D0078DFAA /* RepositoryViewModel.swift */; };
 		DEC425E117BD8FA181073E01 /* Pods_MVVMReactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AD195710E78B62CA2F0861 /* Pods_MVVMReactive.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		3039B6D46B2AC8FE4698464B /* Pods-MVVMReactiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMReactiveTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMReactiveTests/Pods-MVVMReactiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C18CF4D226C18F9005F3524 /* RepositorysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorysViewModel.swift; sourceTree = "<group>"; };
+		4C18CF5D226C9C4F005F3524 /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
+		4C18CF61226CAD04005F3524 /* Rx+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Extension.swift"; sourceTree = "<group>"; };
+		4C18CF69226CBD47005F3524 /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		4C41763722632B0700DDC522 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		4C41763A22632BBE00DDC522 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4C41763E2263328D00DDC522 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
@@ -79,7 +86,6 @@
 		DB050323226436FA0078DFAA /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 		DB050326226437700078DFAA /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
 		DB050328226439600078DFAA /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
-		DB05032A2264831D0078DFAA /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		DEF02C71731C9EAAE000D9A3 /* Pods-MVVMReactive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMReactive.release.xcconfig"; path = "Target Support Files/Pods-MVVMReactive/Pods-MVVMReactive.release.xcconfig"; sourceTree = "<group>"; };
 		E1AD195710E78B62CA2F0861 /* Pods_MVVMReactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMReactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B88864758244B1B74CF57D /* Pods-MVVMReactiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMReactiveUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMReactiveUITests/Pods-MVVMReactiveUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +157,8 @@
 			children = (
 				4C41764D2263736E00DDC522 /* ViewModelType.swift */,
 				DB050326226437700078DFAA /* RepositoryCellViewModel.swift */,
-				DB05032A2264831D0078DFAA /* RepositoryViewModel.swift */,
+				4C18CF4D226C18F9005F3524 /* RepositorysViewModel.swift */,
+				4C18CF69226CBD47005F3524 /* RepositoryDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 				4C9410C62262DF3100BCC79B /* Assets.xcassets */,
 				4C9410C82262DF3100BCC79B /* LaunchScreen.storyboard */,
 				4C9410CB2262DF3100BCC79B /* Info.plist */,
+				4C18CF5D226C9C4F005F3524 /* Kingfisher+Rx.swift */,
+				4C18CF61226CAD04005F3524 /* Rx+Extension.swift */,
 			);
 			path = MVVMReactive;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MVVMReactive/Pods-MVVMReactive-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -378,6 +388,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -463,16 +474,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB05031C22642E960078DFAA /* Repository.swift in Sources */,
-				DB05032B2264831D0078DFAA /* RepositoryViewModel.swift in Sources */,
 				4C41763822632B0700DDC522 /* Networking.swift in Sources */,
+				4C18CF5E226C9C4F005F3524 /* Kingfisher+Rx.swift in Sources */,
 				4C41763B22632BBE00DDC522 /* Service.swift in Sources */,
+				4C18CF6A226CBD47005F3524 /* RepositoryDetailsViewModel.swift in Sources */,
 				4C41764E2263736E00DDC522 /* ViewModelType.swift in Sources */,
 				DB050329226439600078DFAA /* RepositoryViewController.swift in Sources */,
 				DB05031F22642F500078DFAA /* User.swift in Sources */,
 				DB050324226436FA0078DFAA /* RepositoryCell.swift in Sources */,
+				4C18CF4E226C18F9005F3524 /* RepositorysViewModel.swift in Sources */,
 				4C9410C22262DF3000BCC79B /* ViewController.swift in Sources */,
 				DB050327226437700078DFAA /* RepositoryCellViewModel.swift in Sources */,
 				4C41763F2263328D00DDC522 /* GitHubAPI.swift in Sources */,
+				4C18CF62226CAD04005F3524 /* Rx+Extension.swift in Sources */,
 				4C9410C02262DF3000BCC79B /* AppDelegate.swift in Sources */,
 				DB0503212264302D0078DFAA /* License.swift in Sources */,
 			);

@@ -12,32 +12,21 @@ import RxSwift
 
 class ViewController: UIViewController {
     
-    let service = Service()
-    let disposeBag = DisposeBag()
-    
-    let viewModel = RepositoryViewModel()
-
-    lazy var lable: UILabel = {
-        let lable = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 44)))
-        lable.center = view.center
-        return lable
-    }()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(lable)
-        let organizationRepos = service.organizationRepos("apple").subscribe(onSuccess: { repos in
-            print(repos.count)
-        }) { error in
-            print(error.localizedDescription)
-        }
+        
+        // Do any additional setup after loading the view.
     }
     
-    func bindViewModel() {
-        let input = RepositoryViewModel.Input.init(trigger: Observable.just(()))
-        let output = viewModel.transform(input: input)
-        output.items
-            .asDriver(onErrorJustReturn: []).drive()
-    }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }
 
